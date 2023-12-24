@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Chocolate Pack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="chocolateForm">
+        <div>
+            <label for="darkChocolate">Dark Chocolate</label>
+            <input type="checkbox" id="darkChocolate" class="chocolate-checkbox">
+            <input type="number" id="darkChocolateQty" class="quantity-input" min="0">
+        </div>
+        <div>
+            <label for="milkChocolate">Milk Chocolate</label>
+            <input type="checkbox" id="milkChocolate" class="chocolate-checkbox">
+            <input type="number" id="milkChocolateQty" class="quantity-input" min="0">
+        </div>
+        <div>
+            <label for="whiteChocolate">White Chocolate</label>
+            <input type="checkbox" id="whiteChocolate" class="chocolate-checkbox">
+            <input type="number" id="whiteChocolateQty" class="quantity-input" min="0">
+        </div>
+
+        <div>Total Price: $<span id="totalPrice">0.00</span></div>
+        
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+</html>
